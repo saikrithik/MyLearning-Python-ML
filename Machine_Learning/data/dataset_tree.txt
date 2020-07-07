@@ -1,0 +1,19 @@
+from io import StringIO
+dataset =StringIO('''Plays Fetch,Is grumpy,Favorite food,Species
+Yes,No,Bacon,Dog
+No,Yes,Dog Food,Dog
+No,Yes,Cat food,Cat
+No,Yes,Bacon,Cat
+No,No,Cat food,Cat
+No,Yes,Bacon,Cat
+No,Yes,Cat Food,Cat
+No,No,Dog Food,Dog
+No,Yes,Cat food,Cat
+Yes,No,Dog Food,Dog
+Yes,No,Bacon,Dog
+No,No,Cat food,Cat
+Yes,Yes,Cat food,Cat
+Yes,Yes,Bacon,Dog
+''')
+df = pd.read_csv(dataset)
+df
